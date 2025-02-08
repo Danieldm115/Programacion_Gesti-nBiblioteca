@@ -10,6 +10,10 @@ public class Usuario {
         this.dni = dni;
     }
     
+    public String getDni() {
+		return dni;
+	}
+    
     public void setDni(String dni) {
     	while (dni.length() != 9) {
     		System.out.println("La longitud del dni es 9");

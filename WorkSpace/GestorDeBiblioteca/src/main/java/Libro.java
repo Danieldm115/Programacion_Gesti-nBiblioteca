@@ -16,7 +16,14 @@ public class Libro {
         this.disponibilidad = true;
     }
 	
+	public Genero getGenero() {
+		return genero;
+	}
 	
+	public boolean getDisponibilidad() {
+		return disponibilidad;
+	}
+
 	public void marcarComoPrestado() {
         if (disponibilidad) {
             disponibilidad = false;
