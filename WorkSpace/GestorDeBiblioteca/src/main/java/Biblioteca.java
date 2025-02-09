@@ -1,3 +1,28 @@
+/**
+ * Clase Biblioteca
+ * 
+ * Atributos:
+ * - Lista de libros
+ * - Lista de ususarios
+ * - Lista de préstamos <- Contiene los préstamos que no se han devuelto aun,
+ *   los que se devuelvan se borraran de la lista
+ *  
+ * Metodos:
+ * - agregarLibro
+ * - agregarUsuario <- OJO, no debe haber 2 usuarios con el mismo DNI
+ * - realizarPrestamo <- Un usuario puede tener varios libros prestados, pero
+ *   un libro no puede ser prestado a varios usuarios a la vez ¡OJO! solo se
+ *   pueden prestar libros que estén en la biblioteca y solo a usuarios
+ *   registrados en ella.
+ * - devolverLibro <- Al devolver el libro se borra el préstamo de la lista de préstamos
+ * - mostrarLibrosDisponibles
+ * - mostrarLibrosPorGenero
+ * - mostrarLibroPorId
+ * - mostrarPrestamosPorUsuario
+ * - mostrarPrestamosCaducados
+ * - (todos los que ponen “mostrar” solo deben imprimir por pantalla, no tienen que hacer nada más)
+ */
+
 import java.time.LocalDate;
 import java.util.*;
 

@@ -1,5 +1,6 @@
 /**
  * Clase Libro
+ * 
  * Atributos:
  * - ID (int) <- ÚNICA PARA CADA LIBRO
  * - Nombre del autor (no es una clase Autor, es solo un String)
@@ -12,13 +13,18 @@
  * - marcarComoDevuelto
  * - toString
  */
+
 public class Usuario {
 	private String nombre;
     private String dni;
     
     public Usuario(String nombre, String dni) {
-        setDni(dni);
-        this.nombre = nombre;
+    	if (dni.length() == 9) {
+            this.dni = dni;
+            this.nombre = nombre;
+        } else {
+            System.out.println("El DNI debe tener 9 caracteres.");
+        }
     }
     
     public String getDni() {

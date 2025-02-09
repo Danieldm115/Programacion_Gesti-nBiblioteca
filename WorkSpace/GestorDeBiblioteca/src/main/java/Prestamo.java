@@ -1,3 +1,22 @@
+/**
+ * Clase Prestamo
+ * 
+ * Atributos:
+ * - Usuario
+ * - Libro
+ * - FechaDeInicioDePrestamo <- La fecha de inicio tendrá que ser anterior a la fecha de fin.
+ * - FechaDeFinDePrestamo <- Máximo 30 días de préstamo. Si la fecha fin de préstamo tiene más
+ *   de 30 días de diferencia con la de inicio, se debe inicializar la fecha de fin con 30 días
+ *   después de la de inicio, y si la fecha de fin es ANTERIOR a la de inicio, inicializar la
+ *   fecha de fin como la fecha 15 días después de la de inicio.
+ *   
+ * Métodos:
+ * - obtenerDiasDePrestamo
+ * - estaFueraDeFecha <- devuelve true si el préstamo está fuera de fecha (la fecha actual no
+ *   está entre la fecha de inicio y la de fin), y false en caso contrario
+ * - toString
+ */
+
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 

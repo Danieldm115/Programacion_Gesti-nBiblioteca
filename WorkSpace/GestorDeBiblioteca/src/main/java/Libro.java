@@ -1,3 +1,20 @@
+/**
+ * Clase Libro
+ * 
+ * Atributos:
+ * - ID (int) <- ÚNICA PARA CADA LIBRO
+ * - Titulo
+ * - Nombre del autor (no es una clase Autor, es solo un String)
+ * - Genero <- Vosotros podéis decidir los géneros que estarán disponibles.
+ *   Ejemplo: INFANTIL, CIENCIA_FICCION, AVENTURA...
+ * - Disponibilidad <- Indicará si el libro está disponible para ser prestado
+ *   o no (boolean)
+ *   
+ * Métodos:
+ * - marcarComoPrestado
+ * - marcarComoDevuelto
+ * - toString
+ */
 
 public class Libro {
 	private static int contadorLibros = 1;
