@@ -1,7 +1,13 @@
+/**
+ * Clase PrestamoTest
+ * 
+ * Test de las clases:
+ * - testObtenerDiasDePrestamo()
+ * - testEstaFueraDeFecha()
+ */
+
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.time.LocalDate;
-
 import org.junit.jupiter.api.Test;
 
 class PrestamoTest {

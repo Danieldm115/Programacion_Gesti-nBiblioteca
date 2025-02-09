@@ -1,3 +1,13 @@
+/**
+ * Clase BibliotecaTest
+ * 
+ * Test de las clases:
+ * - testAgregarLibro()
+ * - testAgregarUsuario()
+ * - testRealizarPrestamo()
+ * - testDevolverLibro()
+ */
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;

@@ -1,3 +1,11 @@
+/**
+ * Clase LibroTest
+ * 
+ * Test de las clases:
+ * - testMarcarComoPrestado()
+ * - testMarcarComoDevuelto()
+ */
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
