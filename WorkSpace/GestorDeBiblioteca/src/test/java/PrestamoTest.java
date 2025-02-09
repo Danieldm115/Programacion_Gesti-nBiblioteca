@@ -17,9 +17,9 @@ class PrestamoTest {
         biblioteca.agregarUsuario(usuario1);
 
         LocalDate inicio = LocalDate.now();
-        LocalDate fin = inicio.plusDays(20);
+        LocalDate fin = inicio.plusDays(10);
         Prestamo prestamo = new Prestamo(usuario1, libro1, inicio, fin);
-        assertEquals(20, prestamo.obtenerDiasDePrestamo());
+        assertEquals(10, prestamo.obtenerDiasDePrestamo());
 	}
 
 	@Test
