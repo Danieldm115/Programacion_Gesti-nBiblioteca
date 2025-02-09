@@ -41,6 +41,7 @@ public class Biblioteca {
                 System.out.println(libro);
             }
         }
+        System.out.print("\n");
     }
     
     public void mostrarLibrosPorGenero(Genero genero) {
@@ -49,6 +50,7 @@ public class Biblioteca {
                 System.out.println(libro);
             }
         }
+        System.out.print("\n");
     }
     
     public void mostrarLibroPorId(int id) {
@@ -59,6 +61,7 @@ public class Biblioteca {
             }
         }
         System.out.println("Libro no encontrado.");
+        System.out.print("\n");
     }
     
     public void mostrarPrestamosPorUsuario(Usuario usuario) {
@@ -67,6 +70,7 @@ public class Biblioteca {
                 System.out.println(prestamo);
             }
         }
+        System.out.print("\n");
     }
     
     public void mostrarPrestamosCaducados() {
@@ -75,5 +79,6 @@ public class Biblioteca {
                 System.out.println(prestamo);
             }
         }
+        System.out.print("\n");
     }
 }

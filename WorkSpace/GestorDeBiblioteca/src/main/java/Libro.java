@@ -40,13 +40,11 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" +
-                "ID=" + id +
-                ", Titulo='" + titulo + '\'' +
-                ", Autor='" + autor + '\'' +
-                ", Genero=" + genero +
-                ", Disponible=" + (disponibilidad ? "Sí" : "No") +
-                '}';
+        return "" + id +
+                ", Titulo= '" + titulo + '\'' +
+                ", Autor= '" + autor + '\'' +
+                ", Genero= " + genero +
+                ", Disponible= " + (disponibilidad ? "Sí" : "No");
     }
 	
 }
