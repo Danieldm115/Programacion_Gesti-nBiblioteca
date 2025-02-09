@@ -14,12 +14,24 @@ class LibroTest {
 
 	@Test
 	void testMarcarComoPrestado() {
-		fail("Not yet implemented");
+		Libro libro1 = new Libro("El Imperio Final", "Brandon Sanderson", Genero.CIENCIA_FICCION);
+
+        libro1.marcarComoPrestado();
+
+        assertEquals(false, libro1.getDisponibilidad());
 	}
 
 	@Test
 	void testMarcarComoDevuelto() {
-		fail("Not yet implemented");
+		Libro libro1 = new Libro("El Imperio Final", "Brandon Sanderson", Genero.CIENCIA_FICCION);
+
+        libro1.marcarComoPrestado();
+
+        assertEquals(false, libro1.getDisponibilidad());
+
+        libro1.marcarComoDevuelto();
+
+        assertEquals(true, libro1.getDisponibilidad());
 	}
 
 }

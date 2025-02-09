@@ -10,28 +10,67 @@
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.time.LocalDate;
+
 import org.junit.jupiter.api.Test;
 
 class BibliotecaTest {
 
 	@Test
 	void testAgregarLibro() {
-		fail("Not yet implemented");
+		Biblioteca biblioteca = new Biblioteca();
+		
+		Libro libro1 = new Libro("El Imperio Final", "Brandon Sanderson", Genero.CIENCIA_FICCION);
+		
+		biblioteca.agregarLibro(libro1);
+		
+		assertEquals(1, biblioteca.getLibros().size());
 	}
 
 	@Test
-	void testAgregarUsuario() {
-		fail("Not yet implemented");
-	}
+    void testAgregarUsuario() {
+         Biblioteca biblioteca = new Biblioteca();
 
-	@Test
-	void testRealizarPrestamo() {
-		fail("Not yet implemented");
-	}
+         Usuario usuario1 = new Usuario("Daniel Díaz", "53779194L");
+         biblioteca.agregarUsuario(usuario1);
 
-	@Test
-	void testDevolverLibro() {
-		fail("Not yet implemented");
-	}
+         assertEquals(1, biblioteca.getUsuarios().size());
+    }
+
+    @Test
+    void testRealizarPrestamo() {
+         Biblioteca biblioteca = new Biblioteca();
+
+         Libro libro1 = new Libro("El Imperio Final", "Brandon Sanderson", Genero.CIENCIA_FICCION);
+         biblioteca.agregarLibro(libro1);
+
+         Usuario usuario1 = new Usuario("Daniel Díaz", "53779194L");
+         biblioteca.agregarUsuario(usuario1);
+
+         biblioteca.realizarPrestamo(usuario1, libro1, LocalDate.now(), LocalDate.now().plusDays(10));
+
+         assertEquals(1, biblioteca.getPrestamos().size());
+
+    }
+
+    @Test
+    void testDevolverLibro() {
+        Biblioteca biblioteca = new Biblioteca();
+
+        Libro libro1 = new Libro("El Imperio Final", "Brandon Sanderson", Genero.CIENCIA_FICCION);
+        biblioteca.agregarLibro(libro1);
+
+        Usuario usuario1 = new Usuario("Daniel Díaz", "53779194L");;
+        biblioteca.agregarUsuario(usuario1);
+
+        biblioteca.realizarPrestamo(usuario1, libro1, LocalDate.now(), LocalDate.now().plusDays(10));
+
+        assertEquals(1, biblioteca.getPrestamos().size());
+
+        biblioteca.devolverLibro(libro1);
+
+        assertEquals(0, biblioteca.getPrestamos().size());
+    }
+
 
 }

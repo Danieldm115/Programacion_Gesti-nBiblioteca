@@ -31,6 +31,18 @@ public class Biblioteca {
     private List<Usuario> usuarios = new ArrayList<>();
     private List<Prestamo> prestamos = new ArrayList<>();
     
+    public List<Libro> getLibros() {
+		return libros;
+	}
+    
+    public List<Prestamo> getPrestamos() {
+		return prestamos;
+	}
+    
+    public List<Usuario> getUsuarios() {
+		return usuarios;
+	}
+    
     public void agregarLibro(Libro libro) {
         libros.add(libro);
     }
@@ -106,4 +118,5 @@ public class Biblioteca {
         }
         System.out.print("\n");
     }
+
 }
